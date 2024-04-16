@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,7 +20,7 @@ spec:
         resources:
           requests:
             cpu: "100m"  # Requests 100 milliCPUs
-            memory: "256Mi"  # Example memory request
+            memory: "256Mi"  
           limits:
             cpu: "200m"  # Limits the CPU usage to 200 milliCPUs
-            memory: "512Mi"  # Example memory limit
+            memory: "512Mi"  

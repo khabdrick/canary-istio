@@ -37,13 +37,13 @@ spec:
         subset: v1
         port:
           number: 8000
-      weight: 50  # Decrease as v2 proves stable
+      weight: 90  # Decrease as v2 proves stable
     - destination:
         host: myapp
         subset: v2
         port:
           number: 8000
-      weight: 50  # Increase as v2 proves stable
+      weight: 10  # Increase as v2 proves stable
 
 ---
 apiVersion: networking.istio.io/v1alpha3

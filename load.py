@@ -11,6 +11,6 @@ async def send_requests(url, amount):
         await asyncio.gather(*tasks)
 
 url = 'http://localhost/home/'#put the url here
-amount = 500  # Number of requests to send
+amount = 1000  # Number of requests to send
 
 asyncio.run(send_requests(url, amount))
